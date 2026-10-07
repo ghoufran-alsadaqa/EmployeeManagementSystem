@@ -1,23 +1,26 @@
 #ifndef INTERN_H
 #define INTERN_H
 
-#include <iostream>
 #include <string>
+#include <iostream>
 #include "Employee.h"
-using namespace std;
-class Intern : public Employee 
+
+class Intern : public Employee
 {
-    private:
-    public:
-    Intern(string n, int i, double st) 
-    :Employee(n , i , st){}
-    double calculateSalary() override {
-      return baseSalary;}
-    void display() override {
-    cout << "== Intern ==\n"
-         << "name : " << name << "\n"
-         << "ID : " << personID << "\n"
-         << "Stipend : " << baseSalary << endl;
-}
+public:
+    Intern(const std::string& n, int i, double st)
+        : Employee(n, i, st) {}
+
+    double calculateSalary() const override {
+        return baseSalary;
+    }
+
+    void display() const override {
+        std::cout << "== Intern ==\n"
+                  << "Name    : " << name << "\n"
+                  << "ID      : " << personID << "\n"
+                  << "Stipend : " << baseSalary << "\n";
+    }
 };
+
 #endif
