@@ -1,8 +1,7 @@
 # Employee Management System (C++ OOP)
 
 نظام إدارة موظفين بـ C++ يطبق مفاهيم الـ Object-Oriented Programming.
-
-## 🎯 الميزات
+#🎯 الميزات
 - إدارة 3 أنواع من الموظفين: FullTime, PartTime, Intern
 - حساب الرواتب تلقائياً حسب نوع كل موظف
 - عرض البيانات باستخدام Polymorphism
